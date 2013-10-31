@@ -54,14 +54,14 @@ h3{
 	}
     
     a{
-		color: $color-archieve-title;
+	color: $color-archieve-title;
         font-weight: bold;
-		@include transition(color 0.3s);
-		&:hover{
-			color: $color-link;
-			border-bottom:none;
-		}
-	}
+	@include transition(color 0.3s);
+	&:hover{
+		color: $color-link;
+		border-bottom:none;
+               }
+     }
     
 }
 
