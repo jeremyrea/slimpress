@@ -1,15 +1,15 @@
 slimpress
 =========
 
-slimpress is a minimal theme for the [Octopress](www.octopress.org) blogging platform.  It is heavily based off of [mnmlpress](https://github.com/tcnksm/mnmlpress) with inspiration from [cleanpress](https://github.com/macjasp/cleanpress).
+slimpress is a minimal theme for the [Octopress](http://octopress.org/) blogging platform.  It is heavily based off of [tcnksm/mnmlpress](https://github.com/tcnksm/mnmlpress) with inspiration from [macjasp/cleanpress](https://github.com/macjasp/cleanpress).
 
-Check out the theme in action [here](www.staticbrace.com).   
+Check out the theme in action [here](http://staticbrace.com).   
 
 ##Install
->$ cd octopress
->$ git clone https://github.com/jeremyrea/slimpress .themes/slimpress
->$ rake install['slimpress']
->$ rake generate
+    $ cd octopress
+    $ git clone https://github.com/jeremyrea/slimpress .themes/slimpress
+    $ rake install['slimpress']
+    $ rake generate
 
 ##License
 The MIT License (MIT)
