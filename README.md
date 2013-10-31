@@ -4,7 +4,7 @@ slimpress
 Octopress theme
 
 
-#License
+##License
 The MIT License (MIT)
 
 Copyright (c) 2013 Jeremy Rea
