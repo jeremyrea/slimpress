@@ -1,7 +1,7 @@
 slimpress
 =========
 
-slimpress is a minimal theme for the [Octopress](http://octopress.org/) blogging platform.  It is heavily based off of [tcnksm/mnmlpress](https://github.com/tcnksm/mnmlpress) with inspiration from [macjasp/cleanpress](https://github.com/macjasp/cleanpress).
+slimpress is a minimal theme for the [Octopress](http://octopress.org/) blogging platform.  It is heavily based off of [tcnksm/mnmlpress](https://github.com/tcnksm/mnmlpress) with inspiration from [tlvince/leanpress](https://github.com/tlvince/leanpress) for the navigation bar.
 
 Check out the theme in action [here](http://staticbrace.com).   
 
