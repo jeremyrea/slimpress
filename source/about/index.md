@@ -12,8 +12,8 @@ I'm a Computer Science student in Canada, fueled by the world of open-source sof
 
 ##Contact
 
-Email  <mailto:rea.jeremy@gmail.com>  
-Follow [@jrmrea](https://www.twitter.com/jrmrea)
+Email   <mailto:rea.jeremy@gmail.com>  
+Twitter [@jrmrea](https://www.twitter.com/jrmrea)
 
 #About staticbrace.com
 
@@ -21,4 +21,4 @@ This blog is powered by [Octopress](http://www.octopress.org), a static blogging
 
 ##Follow
 
-You can follow staticbrace.com with the [atom feed](https://www.staticbrace.com/atom.xml)
+You can follow staticbrace.com with the [atom feed](https://www.staticbrace.com/atom.xml).
