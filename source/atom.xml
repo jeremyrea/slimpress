@@ -5,10 +5,10 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[{{ site.title }}]]></title>
-  <link href="{{ site.url }}/atom.xml" rel="self"/>
-  <link href="{{ site.url }}/"/>
+  <link href="http://{{ site.url }}/atom.xml" rel="self"/>
+  <link href="http://{{ site.url }}/"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>{{ site.url }}/</id>
+  <id>http://{{ site.url }}/</id>
   <author>
     <name><![CDATA[{{ site.author | strip_html }}]]></name>
     {% if site.email %}<email><![CDATA[{{ site.email }}]]></email>{% endif %}
@@ -24,9 +24,10 @@ layout: nil
     <link href="{{ site.url }}{{ post.url }}"/>
     {% endif%}
     <updated>{{ post.date | date_to_xmlschema }}</updated>
-    <id>{{ site.url }}{{ post.id }}</id>
+    <id>http://{{ site.url }}{{ post.id }}</id>
     {% if post.external-url %}
-      <content type="html"><![CDATA[{{ post.content | expand_urls: site.url | cdata_escape }}<a rel="full-article" href="{{ site.url }}{{ post.url }}"><font size = "4">&#8629;</font></a>]]></content>
+      <content type="html"><![CDATA[{{ post.content | expand_urls: site.url | cdata_escape }}<a rel="full-article" href="{{site.url }}{{ post.url }}"><font size = "4">&#8629;</font></a>]]></content>
+      
       {% else %}
       <content type="html"><![CDATA[{{ post.content | expand_urls: site.url | cdata_escape }}]]></content>
       {% endif%}
