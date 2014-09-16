@@ -1,4 +1,5 @@
 ---
+title: Feed
 layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
@@ -26,8 +27,7 @@ layout: nil
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <id>http://{{ site.url }}{{ post.id }}</id>
     {% if post.external-url %}
-      <content type="html"><![CDATA[{{ post.content | expand_urls: site.url | cdata_escape }}<a rel="full-article" href="{{site.url }}{{ post.url }}"><font size = "4">&#8629;</font></a>]]></content>
-      
+      <content type="html"><![CDATA[{{ post.content | expand_urls: site.url | cdata_escape }}<a rel="full-article" href="{{ post.url }}"><font size = "4">&#8629;</font></a>]]></content>
       {% else %}
       <content type="html"><![CDATA[{{ post.content | expand_urls: site.url | cdata_escape }}]]></content>
       {% endif%}
