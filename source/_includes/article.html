@@ -2,11 +2,10 @@
 	<header>
 		<h2 class="title">
 			{% if post.external-url %}
-			<a href="{{ post.external-url }}">
+			<a href="{{ post.external-url }}"> {% if site.titlecase %}{{ post.title | titlecase }} &rarr;{% else %}{{ post.title }}{% endif %}</a>
 			{% else %}
-			<a href="{{ root_url }}{{ post.url }}">
+			<a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a>
 			{% endif %}
-				{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a>
 		</h2>
 		<div class="meta date">{% include post/date.html %}{{ time }}</div>
 	</header>
@@ -17,8 +16,33 @@
 	</div>
 {% else %}
 	<header>
+		{% if page.external-url %}
+		<h2 class="title"> <a href="{{ page.external-url }}"> {% if site.titlecase %}{{ page.title | titlecase }} &rarr;{% else %}{{ page.title }}{% endif %}</a></h2>
+		{% else %}
 		<h2 class="title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h2>
+		{%  endif %}
 		<div class="meta date">{% include post/date.html %}{{ time }}</div>
 	</header>
+
 	<div class="entry-content">{{ content }}</div>
 {% endif %}
+
+	{% if post.external-url %}
+		<div class="entry-content"></div>
+		<footer><a rel="full-article" href="{{ root_url }}{{ post.url }}"><font size = "4">&#8629;</font></a></footer>
+	{% endif %}
+	{% if page.external-url %}
+	<footer><a rel="full-article" href="{{ root_url }}{{ post.url }}"><font size = "4">&#8629;</font></a>
+	</div></footer>
+	{% endif %}
+
+<!--
+linklog edits based from
+http://www.candlerblog.com/2012/01/30/octopress-linked-list/
+-->
+
+
+
+
+
+
