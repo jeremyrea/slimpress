@@ -52,9 +52,9 @@ h3{
 	@media screen and (max-width: 620px) {
 	font-size: 15px;
 	}
-    
+
     a{
-	color: $color-archieve-title;
+	color: $color-archive-title;
         font-weight: bold;
 	@include transition(color 0.3s);
 	&:hover{
@@ -62,7 +62,7 @@ h3{
 		border-bottom:none;
                }
      }
-    
+
 }
 
 a.category {
